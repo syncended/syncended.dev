@@ -10,3 +10,31 @@ body {
 	margin: 0px;
 }
 
+.container {
+	color: white;
+	font-family: "console";
+	margin: 0;
+	position: absolute;
+	font-size: 24pt;
+	top: 30%;
+	width: 600px;
+	left: 50%;
+	transform: translate(-50%, -50%)
+}
+
+.header {
+	font-size: 64pt;
+	text-align: center;
+}
+
+#text {
+	color: green;
+}
+
+.red {
+	color: red;
+}
+
+.white {
+	color: white;
+}
