@@ -10,7 +10,7 @@ body {
 	margin: 0px;
 	-moz-user-select: none
 }
-@media screen and (max-device-width: 599px) and (orientation: portrait){
+@media screen and (max-width: 600px){
 	.container {
 		color: white;
 		font-family: "console";
@@ -18,7 +18,7 @@ body {
 		position: absolute;
 		font-size: 24pt;
 		top: 30%;
-		width: 95%;
+		width: 90%;
 		left: 50%;
 		transform: translate(-50%, -50%)
 	}
