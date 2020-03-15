@@ -1,91 +1,61 @@
-:root {
-	--color-primary: #FF7E00;
-	--color-background: #FFFFCC;
-	--color-content-background: #FFFFB9;
-	--color-hover: #262626;
-	--color-description: #262626;
-}
 
 @font-face {
-	font-family: "sans-regular";
-	src: url('../fonts/sans-regular.ttf')  format('truetype');
+	font-family: "console";
+	src: url('../fonts/font.ttf')  format('truetype');
 }
 
-@font-face {
-	font-family: "sans-semibold";
-	src: url('../fonts/sans-semibold.ttf')  format('truetype');
-}
-
-@font-face {
-	font-family: "sans-italic";
-	src: url('../fonts/sans-italic.ttf')  format('truetype');
-}
 
 body {
-	background-color: var(--color-background);
+	background-color: black;
 	margin: 0px;
+	-moz-user-select: none
+}
+
+.container {
+	color: white;
+	font-family: "console";
+	margin: 0;
+    position: absolute;
+    font-size: 24pt;
+    top: 30%;
+    width: 600px;
+    left: 50%;
+    transform: translate(-50%, -50%)
 }
 
 .header {
+	font-size: 64pt;
+	text-align: center;
+}
+
+#text {
+	color: green;
+}
+
+.red {
+	color: red;
+}
+
+.white {
 	color: white;
-	height: 50px;
-	text-align: center;
-	vertical-align: middle;
-	font-size: 18pt;
-	line-height: 50px;
-	font-family: "sans-semibold", sans-serif;
-	background-color: var(--color-primary);
-}
-.content {
-	padding-right: 20px;
-	padding-left: 20px;
-	width: 800px;
-	height: 100%;
-	margin: auto;
-	margin-top: 0px;
-	background-color: var(--color-content-background);
-}
-
-.project {
-	padding-top: 20px;
-	font-family: "sans-semibold", sans-serif;
-	font-size: 16pt;
-}
-
-.description {
-	font-family: "sans-regular", sans-serif;
-	font-size: 12pt;
-	color: var(--color-description);
-}
-
-.gallery {
-	text-align: center;
-	display: block;
-}
-
-img {
-	margin: 20px;
-	margin-left: 20px;
-	margin-right: 20px;
-	width: 200px;
-	max-height: 350px;
 }
 
 a {
 	text-decoration: none;
+	color: blue;
 }
 
 a:hover {
-	color: var(--color-hover);
+	color: blue;
 	text-decoration: none;
 	cursor: pointer;
 }
 
 a:link {
-	color: black;
+	color: blue;
 }
 
 a:visited {
-	color: black;
+	color: blue;
 	text-decoration: none;
 }
