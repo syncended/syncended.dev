@@ -18,7 +18,7 @@ body {
 		position: absolute;
 		font-size: 24pt;
 		top: 30%;
-		width: 350px;
+		width: 300px;
 		left: 50%;
 		transform: translate(-50%, -50%)
 	}
