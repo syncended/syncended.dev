@@ -1,5 +1,4 @@
-var text = "Welcome to syncended's page.\n";
-var forattedText = "Welcome to <span class=\"red\">syncended's</span> page."
+var text = "Welcome to syncended's page. You can find my git repository on follow link: https://github.com/syncended";
 var typeDuration = 50;
 var cursorDuration = 500;
 
@@ -10,17 +9,12 @@ function startAnimation() {
 	var t = document.getElementById("text");
 	var interval = setInterval(function() {
 		if(position != text.length + 1) {
-			if(position > 11 && position < 23) {
-				t.innerHTML = first + '<span class="red">' + text.substring(11, position) + '</span>' + '<span class="white">|</span>';
-			} else if (position < 12) {
-				t.innerHTML = text.substring(0, position) + '<span class="white">|</span>';
-			} else {
-				t.innerHTML = first + nick + text.substring(22, position) + '<span class="white">|</span>';
-			}
+			t.innerHTML = formatText(text.substring(0, position)) + '<span class="white">|</span>';
 			position++;
 		} else {
 			clearInterval(interval);
 			cursorAnimation();
+			formatText(text);
 		}
 	}, typeDuration);
 }
@@ -28,15 +22,28 @@ function startAnimation() {
 function cursorAnimation() {
 	var cursor = false;
 	var t = document.getElementById("text");
+	var fText = formatText(text);
 	setInterval(function() {
 		if(cursor) {
 			cursor = false;
-			t.innerHTML = forattedText + '<span class="white">|</span>';
+			t.innerHTML = fText + '<span class="white">|</span>';
 		} else {
 			cursor = true;
-			t.innerHTML = forattedText;
+			t.innerHTML = fText;
 		}
 	}, cursorDuration)
+}
+
+function formatText(txt) {
+	var out = "";
+	for(var i = 0; i < txt.length; i++) {
+		if(i >= 11 && i < 23) {
+			out += '<span class="red">' + txt[i] + '</span>'
+		} else {
+			out += txt[i];
+		}
+	}
+	return out;
 }
 
 window.onload = startAnimation;

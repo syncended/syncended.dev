@@ -14,12 +14,12 @@ body {
 	color: white;
 	font-family: "console";
 	margin: 0;
-	position: absolute;
-	font-size: 24pt;
-	top: 30%;
-	width: 600px;
-	left: 50%;
-	transform: translate(-50%, -50%)
+    position: absolute;
+    font-size: 24pt;
+    top: 30%;
+    width: 600px;
+    left: 50%;
+    transform: translate(-50%, -50%)
 }
 
 .header {
@@ -36,5 +36,5 @@ body {
 }
 
 .white {
-	color: white;
+	color:white;
 }
