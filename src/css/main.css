@@ -1,4 +1,10 @@
 
+@font-face {
+	font-family: "console";
+	src: url('../fonts/font.ttf')  format('truetype');
+}
+
+
 body {
 	background-color: black;
 	margin: 0px;
