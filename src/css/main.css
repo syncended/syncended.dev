@@ -8,6 +8,7 @@
 body {
 	background-color: black;
 	margin: 0px;
+	-moz-user-select: none
 }
 
 .container {
@@ -36,5 +37,25 @@ body {
 }
 
 .white {
-	color:white;
+	color: white;
+}
+
+a {
+	text-decoration: none;
+	color: blue;
+}
+
+a:hover {
+	color: blue;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a:link {
+	color: blue;
+}
+
+a:visited {
+	color: blue;
+	text-decoration: none;
 }
