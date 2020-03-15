@@ -18,23 +18,25 @@ body {
 		position: absolute;
 		font-size: 24pt;
 		top: 30%;
-		width: 400px;
+		width: 350px;
 		left: 50%;
 		transform: translate(-50%, -50%)
 	}
 }
 
 
-.container {
-	color: white;
-	font-family: "console";
-	margin: 0;
-	position: absolute;
-	font-size: 24pt;
-	top: 30%;
-	width: 400px;
-	left: 50%;
-	transform: translate(-50%, -50%)
+@media (min-device-width: 650px) {
+	.container {
+		color: white;
+		font-family: "console";
+		margin: 0;
+		position: absolute;
+		font-size: 24pt;
+		top: 30%;
+		width: 600px;
+		left: 50%;
+		transform: translate(-50%, -50%)
+	}
 }
 
 .header {
