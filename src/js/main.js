@@ -1,8 +1,23 @@
-var text = "Welcome to syncended's page. You can find my git profile on follow link: https://github.com/syncended If you want, you can look at my projects here.";
+var text = "Welcome to syncended's site. You can find my git profile on follow link: https://github.com/syncended If you want, you can look at my projects here.";
 var typeDuration = 50;
 var cursorDuration = 500;
+var logoDuration = 5;
 
-function startAnimation() {
+function logoAnimation() {
+	var pos = 0;
+	var h = document.getElementById("header");
+	var logoAnim = setInterval(function() {
+		h.style.color = "rgb(" + pos + "," + pos + "," + pos + ")";
+		pos++;
+		if(pos == 255) {
+			clearInterval(logoAnim);
+			typeAnimation()
+		}
+
+	}, logoDuration);
+}
+
+function typeAnimation() {
 	var position = 0;
 	var first = text.substring(0, 11);
 	var nick = '<span class="red">syncended\'s</span>';
@@ -14,7 +29,6 @@ function startAnimation() {
 		} else {
 			clearInterval(interval);
 			cursorAnimation();
-			formatText(text);
 		}
 	}, typeDuration);
 }
@@ -34,6 +48,8 @@ function cursorAnimation() {
 	}, cursorDuration)
 }
 
+
+
 function formatText(txt) {
 	var out = "";
 	for(var i = 0; i < txt.length; i++) {
@@ -44,7 +60,7 @@ function formatText(txt) {
 			out += '<span class="red">' + txt[i] + '</span>'
 		} else if((i > 72 && i < 101) || (i > 44 && i < 48)) {
 			out += '<a href="https://github.com/syncended">' + txt[i] + "</a>";
-		} else if(i > 142 && i < 147) {
+		} else if(i > 142 && i < 148) {
 			out += '<a href="projects.html">' + txt[i] + "</a>";
 		} else {
 			out += txt[i];
@@ -53,4 +69,4 @@ function formatText(txt) {
 	return out;
 }
 
-window.onload = startAnimation;
+window.onload = logoAnimation;
