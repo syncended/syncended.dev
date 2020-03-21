@@ -1,1 +1,1 @@
-import anime from 'animejs';
+import anime from './include/anime.js';
