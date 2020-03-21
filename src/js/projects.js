@@ -1,3 +1,3 @@
-import anime from './include/anime.js';
+import anime from './include/anime.min.js';
 
 alert(123);
