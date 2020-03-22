@@ -18,7 +18,7 @@ export const wrapper = function(decoration, text) {
 			if(text.length >= from) {
 				out += text.substring(len, from - 1);
 				len += text.substring(len, from - 1).length + to - from + 1;
-				out += '<a href="' + clazz + '">' + text.substring(from - 1, to) + "</span>";
+				out += '<a href="' + clazz + '">' + text.substring(from - 1, to) + "</a>";
 			}
 		}
 	}
