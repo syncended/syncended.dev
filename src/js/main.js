@@ -5,7 +5,7 @@ var typeDuration = 50;
 var cursorDuration = 500;
 var logoDuration = 5;
 
-var wrapperRules = [["s", "red", 12, 20]];
+var wrapperRules = [["s", "red", 12, 22], ["a", "https://github.com/syncended", 45, 48]];
 
 function logoAnimation() {
 	var pos = 0;
@@ -23,8 +23,6 @@ function logoAnimation() {
 
 function typeAnimation() {
 	var position = 0;
-	var first = text.substring(0, 11);
-	var nick = '<span class="red">syncended\'s</span>';
 	var t = document.getElementById("text");
 	var interval = setInterval(function() {
 		if(position != text.length + 1) {
@@ -40,7 +38,7 @@ function typeAnimation() {
 function cursorAnimation() {
 	var cursor = false;
 	var t = document.getElementById("text");
-	var fText = formatText(text);
+	var fText = wrapper(text);
 	setInterval(function() {
 		if(cursor) {
 			cursor = false;

@@ -8,7 +8,6 @@ export const wrapper = function(decoration, text) {
 		var clazz = decore[1]; //if it's <a> it'll be href
 		var from = decore[2];
 		var to = decore[3];
-		console.log(type, clazz, from, to);
 		if(type == 's') {
 			if(text.length >= from) {
 				out += text.substring(len, from - 1);
