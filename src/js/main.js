@@ -1,7 +1,11 @@
+import wrapper from "./anim.js";
+
 var text = "Welcome to syncended's site. You can find my git profile on follow link: https://github.com/syncended If you want, you can look at my projects here.";
 var typeDuration = 50;
 var cursorDuration = 500;
 var logoDuration = 5;
+
+var wrapperRules = [["s", "red", 12, 20]];
 
 function logoAnimation() {
 	var pos = 0;
@@ -24,7 +28,7 @@ function typeAnimation() {
 	var t = document.getElementById("text");
 	var interval = setInterval(function() {
 		if(position != text.length + 1) {
-			t.innerHTML = formatText(text.substring(0, position)) + '<span class="white">|</span>';
+			t.innerHTML = wrapper(wrapperRules ,text.substring(0, position)) + '<span class="white">|</span>';
 			position++;
 		} else {
 			clearInterval(interval);
