@@ -1,4 +1,4 @@
-import wrapper from "./anim.js";
+import {wrapper} from "./anim.js";
 
 var text = "Welcome to syncended's site. You can find my git profile on follow link: https://github.com/syncended If you want, you can look at my projects here.";
 var typeDuration = 50;
