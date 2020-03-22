@@ -1,5 +1,5 @@
 //Все элементы декорации должны быть расположены в порядке по тексту
-const wrapper = function(decoration, text) {
+export const wrapper = function(decoration, text) {
 	var out = ""
 	var len = 0;
 	for(var i = 0; i < decoration.length; i++) {
@@ -26,6 +26,3 @@ const wrapper = function(decoration, text) {
 	out += text.substring(len, text.length);
 	return out;
 }
-
-export {wrapper};
-// wrapper([['s', 'red', 1, 3], ['s', 'blue', 5, 7], ['a', 'http://syncended.ru', 10, 15]], "Hello, It's simple, and possible big text for testing my own fucntion");
