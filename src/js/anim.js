@@ -22,12 +22,15 @@ export const wrapper = function(decoration, text) {
 			}
 		} else if(type == 'b') {
 			if(text.length >= from) {
-				out += text.substring(len, from - 1);
-				len += 4;
+				console.log(len);
+				console.log(from);
+				out += text.substring(len, from);
+				len += 3;
 				out += '<br>';
 			}
 		}
 	}
 	out += text.substring(len, text.length);
+	console.log(out);
 	return out;
 }
