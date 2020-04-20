@@ -5,7 +5,7 @@ var typeDuration = 50;
 var cursorDuration = 500;
 var logoDuration = 5;
 
-var wrapperRules = [["s", "red", 15, 25], ["a", "https://github.com/syncended", 48, 51]];
+var wrapperRules = [["s", "red", 12, 22], ["a", "https://github.com/syncended", 48, 51], ["b", "", 2]];
 
 function logoAnimation() {
 	var pos = 0;

@@ -20,6 +20,12 @@ export const wrapper = function(decoration, text) {
 				len += text.substring(len, from - 1).length + to - from + 1;
 				out += '<a href="' + clazz + '">' + text.substring(from - 1, to) + "</a>";
 			}
+		} else if(type == 'b') {
+			if(text.length >= from) {
+				out += text.substring(len, from - 1);
+				len += 4;
+				out += '<br>';
+			}
 		}
 	}
 	out += text.substring(len, text.length);
