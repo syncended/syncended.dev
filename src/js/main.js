@@ -9,7 +9,8 @@ var wrapperRules = [
 	["s", "red", 12, 22], 
 	["b", "", 32], 
 	["a", "https://github.com/syncended", 49, 51], 
-	["a", "https://github.com/syncended", 76, 104]
+	["a", "https://github.com/syncended", 76, 104],
+	["a", "/projects", 146, 150]
 ];
 
 function logoAnimation() {
