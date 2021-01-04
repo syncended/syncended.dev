@@ -10,7 +10,7 @@ body {
 	margin: 0px;
 	-moz-user-select: none
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 800px){
 	.container {
 		color: white;
 		font-family: "console";
@@ -25,7 +25,7 @@ body {
 }
 
 
-@media (min-device-width: 650px) {
+@media (min-device-width: 850px) {
 	.container {
 		color: white;
 		font-family: "console";
@@ -33,15 +33,26 @@ body {
 		position: absolute;
 		font-size: 24pt;
 		top: 30%;
-		width: 600px;
+		width: 800px;
 		left: 50%;
 		transform: translate(-50%, -50%)
 	}
 }
 
+.divider {
+	background-color: #505050;
+	width: 100%;
+	height: 2px;
+}
+
 .header {
 	font-size: 64pt;
 	text-align: center;
+}
+
+.sub_header {
+	font-size: 48pt;
+	margin-left: 20px;
 }
 
 #text {
