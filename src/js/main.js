@@ -38,12 +38,15 @@ function typeAnimation() {
 function cursorAnimation() {
 	var cursor = false;
 	var t = document.getElementById("text");
-	var fText = wrapper(text);
+	var fText = wrapper(wrapperRules, text);
+
 	setInterval(function() {
 		if(cursor) {
+			console.log("123")
 			cursor = false;
 			t.innerHTML = fText + '<span class="white">|</span>';
 		} else {
+			console.log("321")
 			cursor = true;
 			t.innerHTML = fText;
 		}
