@@ -28,7 +28,7 @@ export const wrapper = function(decoration, text) {
 				console.log(len);
 				console.log(from);
 				out += text.substring(len, from);
-				len += 4;
+				//len += 3;
 				out += '<br>';
 			}
 		}

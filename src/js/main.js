@@ -1,6 +1,6 @@
 import {wrapper} from "./anim.js";
 
-var text = "Welcome to syncended's website.You can find my git profile on follow link: https://github.com/syncended If you want, you can look at my projects here.";
+var text = "Welcome to syncended's website. You can find my git profile on follow link: https://github.com/syncended ";
 var typeDuration = 50;
 var cursorDuration = 500;
 var logoDuration = 5;
