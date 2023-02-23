@@ -1,6 +1,6 @@
 import {wrapper} from "./anim.js";
 
-var text = "Welcome to syncended's website. You can find my git profile on follow link: https://github.com/syncended If you want, you can look at my projects here.";
+var text = "Welcome to syncended's website.You can find my git profile on follow link: https://github.com/syncended If you want, you can look at my projects here.";
 var typeDuration = 50;
 var cursorDuration = 500;
 var logoDuration = 5;
@@ -10,7 +10,6 @@ var wrapperRules = [
 	["b", "", 32], 
 	["a", "https://github.com/syncended", 49, 51], 
 	["a", "https://github.com/syncended", 76, 104],
-	["a", "/projects", 146, 150]
 ];
 
 function logoAnimation() {
